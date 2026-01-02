@@ -1,0 +1,74 @@
+.background-img {
+    height: 100%;
+    background-image: url('../assets/bg_login.webp');
+    background-size: cover;
+    background-position: center;
+    display: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.profile-card {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding:50px;
+    background-color: white;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+    width:100%;
+    text-align: start;
+    font-size: 24px;
+    font-family:Arial;
+}
+
+.p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-input{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width:80%;
+}
+
+.btn-container {
+    margin-top:20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.btn-save {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0063e5;
+    color: white;
+    cursor: pointer;
+}
+.btn-logout {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+}
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}

@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+  width: 100%;
+  margin: auto;
+  padding: 0 24px;
+  height: 50px;
+  max-height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-navbar {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-left {
+  margin-left: 32px;
+}
+
+.menu-right {
+  margin-left: auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #2563eb;
+}
+
+/* Spacer */
+.spacer {
+  height: 50px;
+  background-color: #054553;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Wrapper for movie recommendations */
+.wrapper {
+    width: 100%;
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 16rem;
+    justify-content: stretch;
+    height: 400px;
+    gap: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 30px;
+    animation: animate 10s linear infinite;
+    width:max-content;
+}
+@keyframes animate {
+    to {
+        translate: calc(-2 * 16rem)
+    }
+}
+.wrapper>div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.wrapper>div:nth-of-type(1) {
+    background-image: url("./assets/poster_nezha2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div:nth-of-type(2) {
+    background-image: url("./assets/poster_avatar3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div:nth-of-type(3) {
+    background-image: url("./assets/poster_sisu2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div:nth-of-type(4) {
+    background-image: url("./assets/poster_avengerdoomsday.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div:nth-of-type(5) {
+    background-image: url("./assets/poster_percyjackson.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div:nth-of-type(6) {
+    background-image: url("./assets/poster_fantastic4.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div:nth-of-type(7) {
+    background-image: url("./assets/poster_frozen2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.wrapper>div .content {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    height: 100%;
+    opacity: 0;
+    justify-content: flex-end;
+    background: linear-gradient(0deg, rgba(2, 2, 46, 0.67) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+    text-align: center;
+}
+.wrapper>div .content span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+.wrapper>div .content h2 {
+  display: block;
+  text-align: center;
+}
+.wrapper>div:hover {
+    flex: 0 0 250px;
+    transform: translateY(-30px);
+}
+.wrapper>div:hover .content {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+}
+/* Register Spacer */
+.register-spacer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color:white;
+    flex-direction: row;
+    gap: 20px;
+    font-size:24px;
+}
+.register-button {
+    width: 250px;
+    background-color:rgb(29, 97, 207);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/*upcomig content section*/
+.upcoming-container {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(236, 234, 234);
+    padding: 20px;
+    justify-content: center;
+}
+.upcoming-container h2 {
+  text-align: center;
+}
+.upcoming-card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.upcoming-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 200px;
+
+}
+.upcoming-content h3 {
+    width: 100%;              
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+.img-wrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;          
+  border-radius: 8px;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.upcoming-content:hover .img-wrapper img {
+  transform: scale(1.1);   
+}
+.upcoming-content img {
+    width: 100%;
+    height: 300px;             
+    object-fit: cover;
+}
+
+/* Additional Content Section */
+.additional-content {
+    text-align: center;
+    color: #374151;
+    background-color: #054553;
+    padding: 20px;
+}
+.additional-content h2 {
+  text-align: center;
+}
+.additional-content a{
+    text-decoration: none;
+    color: white;
+}
+.additional-content .news {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.additional-content .news .news-content {
+    background-color: #136878;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.additional-content .news .news-content h3 {
+    padding: 10px;
+    color: white;
+    text-align: start;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+    justify-self:last baseline;
+    margin-top: auto;
+}
+.additional-content .signup-button {
+    width: 250px;
+    background-color: #02D6E8;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.additional-content .paragraph {
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+.additional-content img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px 0;
+}
+.additional-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:white;
+    margin-top: 20px;
+}
+.additional-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:white;
+}
+.additional-content p {
+    margin: 10px;
+    line-height: 1.6;
+    color:white;
+    text-align:start;
+}
+
+/* Footer */
+.footer {
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.footer-link {
+  display: inline-flex;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.footer-link img {
+  pointer-events: auto;
+}
+.footer-menu {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.footer-menu li a:hover {
+  color: blue;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Card */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

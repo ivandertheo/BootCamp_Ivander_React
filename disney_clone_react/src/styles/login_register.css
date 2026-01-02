@@ -1,0 +1,121 @@
+.background-img {
+    height: 100vh;
+    background-image: url('../assets/bg_login.webp');
+    background-size: cover;
+    background-position: center;
+    display: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.login-nav {
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.back_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 20px;
+    border-radius:50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+.back_button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.login-logo {
+    display:flex;
+    width: 200px;
+    height: 70px;
+    margin: 30px;
+    fill: white;
+}
+.login-wrapper{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding:50px;
+    background-color: white;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    visibility:visible;
+    max-width: 1000px;
+}
+h2{
+    width:100%;
+    text-align: start;
+    font-size: 24px;
+    font-family:Arial;
+}
+p{
+    margin-top:15px;
+    text-align: start;
+    font-size: 14px;
+}
+/*form input*/
+.form-input{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/*btn_next*/
+.btn_next{
+    margin-top:15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0063e5;
+    color: white;
+    cursor: pointer;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.checkbox {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+.checkbox:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.btn_next:hover{
+    background-color: #016cc4;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 24px 0;
+}
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
